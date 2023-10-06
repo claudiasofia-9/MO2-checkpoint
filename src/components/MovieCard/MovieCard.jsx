@@ -10,13 +10,6 @@ import "./movieCard.css";
 const MovieCard = (props) => {
   return (
     <div className="card">
-      <button onClick={() => actions.deleteMovie(props.id)}>x</button>
-      <Link to={`/movie/${props.id}`}>
-        <h3>{props.name}</h3>
-      </Link>
-      <img src={props.image} alt={props.name} />
-      <p>ReleaseYear: {props.releaseYear}</p>
-      <p>Director: {props.director}</p>
     </div>
   );
 };

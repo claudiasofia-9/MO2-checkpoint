@@ -29,34 +29,6 @@ const CreateMovie = () => {
 
   return (
     <form onSubmit={submit}>
-      <label>Name: </label>
-      <input
-        type="text"
-        name="name"
-        value={values.name}
-        onChange={handleInputChange}
-      />
-      <label>ReleaseYear: </label>
-      <input
-        name="releaseYear"
-        type="number"
-        value={values.releaseYear}
-        onChange={handleInputChange}
-      />
-      <label>Description: </label>
-      <textarea
-        name="description"
-        value={values.description}
-        onChange={handleInputChange}
-      ></textarea>
-      <label>Director: </label>
-      <input
-        type="text"
-        name="director"
-        value={values.director}
-        onChange={handleInputChange}
-      />
-      <button type="submit">Create Movie</button>
     </form>
   );
 };

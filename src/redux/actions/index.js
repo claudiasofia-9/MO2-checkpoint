@@ -22,7 +22,7 @@ export const SEND_EMAIL = 'SENT_EMAIL';
 
 // Inicializamos id en 6, para que nuestros próximos ID's no se pisen con los existentes.
 // La vas a usar en la funcion createMovie, descomentala cuando te haga falta;
-let idMovie = 5;
+
 // Desde el componente ejecutamos la action creator, pasandole como argumento los values que vamos a utilizar para crear la movie.
 // Puedes usar spread operator para copiar el objeto payload.
 
@@ -45,25 +45,15 @@ export const getMovieDetail = (id) => (dispatch) => {
 };
 
 export const createMovie = (payload) => {
-  idMovie++;
-  return {
-    type: CREATE_MOVIE,
-    payload: { ...payload, id: idMovie },
-  };
+
 };
 
 // Desde el componente ejecutamos la action creator, pasandole como argumento el id de la movie que queremos eliminar.
 export const deleteMovie = (id) => {
-  return {
-    type: DELETE_MOVIE,
-    payload: id,
-  };
+  
 };
 
 // Desde el componente ejecutamos la action creator, pasandole como argumento los values que vamos a utilizar para enviar el form de contacto.
 export const sendEmail = (mail) => {
-  return {
-    type: SEND_EMAIL,
-    payload: mail,
-  };
+  
 };

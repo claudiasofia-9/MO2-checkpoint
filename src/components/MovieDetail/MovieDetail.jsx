@@ -21,10 +21,6 @@ const MovieDetail = (props) => {
 
   return (
     <div>
-      <p>{selectedProduct.name}</p>
-      <p>{selectedProduct.director}</p>
-      <p>{selectedProduct.description}</p>
-      <p>{selectedProduct.releaseYear}</p>
     </div>
   );
 };

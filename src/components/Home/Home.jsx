@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getAllMovies } from "../../redux/actions";
-import mainImage from "../../img-cp2/main-image-cp2.jpg";
-import MovieCard from "../MovieCard/MovieCard";
 import "./home.css";
 // Importar las actions como Object Modules, sino los test no funcionarán!
 
@@ -15,19 +13,7 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <h1>Henry Movies</h1>
-        <img src={mainImage} alt="henry-movies-logo" />
-        <h3>Movies</h3>
-        <h4>Checkpoint M2</h4>
-        {this.props.movies?.map((el) => (
-          <MovieCard
-            id={el.id}
-            name={el.name}
-            director={el.director}
-            releaseYear={el.releaseYear}
-            image={el.image}
-          />
-        ))}
+
       </div>
     );
   }

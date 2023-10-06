@@ -16,22 +16,29 @@ const initialState = {
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_ALL_MOVIES:
-      return { ...state, movies: action.payload };
+      return {
+
+      }
 
     case GET_MOVIE_DETAILS:
-      return { ...state, movieDetail: action.payload };
+      return {
+
+      }
 
     case CREATE_MOVIE:
-      return { ...state, movies: [...state.movies, action.payload] };
+      return {
 
+      }
+      
     case DELETE_MOVIE:
       return {
-        ...state,
-        movies: state.movies.filter((el) => el.id !== action.payload),
-      };
+
+      }
 
     case SEND_EMAIL:
-      return { ...state, email: action.payload };
+      return {
+        
+      }
 
     default:
       return { ...state };
